@@ -4,10 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <stdio.h>
 #include <string.h>
 #include <dlfcn.h>
-#include <sys/stat.h>
 #include <android/log.h>
 
 
@@ -28,8 +26,8 @@ void *dlopen(const char *filename, int flags) {
 		return NULL;
 	}
 
-	mkdir("/data/vendor/fpdata", 0700);
-	snprintf(g_custom_ini_path_handle, 21, "/data/vendor/fpdata/");
+	static const char rbs_data_path[] = "/data/vendor_de/0/fpdata/";
+	memcpy(g_custom_ini_path_handle, rbs_data_path, sizeof(rbs_data_path));
 
 	return lib_handle;
 }
