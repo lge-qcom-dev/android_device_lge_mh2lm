@@ -23,7 +23,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/lineageos_mh2_defconfig
+TARGET_KERNEL_CONFIG += vendor/lge/lge-mh2.config
 
 # Lights
 $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
