@@ -587,7 +587,6 @@ vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml
 vendor/lib64/hw/fingerprint.msmnile.so
 vendor/lib64/libRbsFlow.so
 vendor/lib64/libets_teeclient_v2.so
-vendor/lib64/libfpsph.so
 
 # GNSS
 vendor/etc/gnss_antenna_info.conf
