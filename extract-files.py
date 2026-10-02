@@ -18,6 +18,7 @@ from extract_utils.fixups_lib import (
 
 namespace_imports = [
     "device/lge/mh2lm",
+    "hardware/lge",
     "vendor/lge/sm8150-common",
     "vendor/qcom/opensource/display",
 ]
