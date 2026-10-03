@@ -41,8 +41,13 @@ PRODUCT_PACKAGES += \
     vendor.lge.hardware.audio.dac.control@2.0-service
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.lge
+$(call soong_config_set,lge_udfps,sensor_x,540)
+$(call soong_config_set,lge_udfps,sensor_y,2107)
+$(call soong_config_set,lge_udfps,sensor_radius,98)
+$(call soong_config_set_bool,lge_udfps,managed_sequence,false)
+$(call soong_config_set,lge_udfps,panel_path,/sys/devices/virtual/panel/brightness/fp_lhbm)
+
+$(call inherit-product, hardware/lge/aidl/biometrics/fingerprint/udfps.mk)
 
 # Keylayout
 PRODUCT_COPY_FILES += \
