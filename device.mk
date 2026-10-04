@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.lge
+    android.hardware.biometrics.fingerprint-service.lge
 
 # Keylayout
 PRODUCT_COPY_FILES += \
